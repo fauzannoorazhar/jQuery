@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>HTML Page</title>
+    </head>
+	<script type="text/javascript" src="js.js"></script>
+    <body>
+		<header id="headerItem">
+	   		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</header> 
+
+		<div>&nbsp;</div>
+
+			<section>
+				<button onclick="startLogic()">Klik Disini</button>
+				<button onclick="clickHandler()">Show Alert</button>
+			</section>
+
+		<div>&nbsp;</div>
+
+		<dl>
+		    <dt>Is the variable undefined?</dt>
+		    <dd id="isUndefined"></dd>
+		    <dt>Is the variable null?</dt>
+		    <dd id="isNull"></dd>
+		    <dt>Is the variable empty?</dt>
+		    <dd id="isEmpty"></dd>
+		</dl> 
+		<script type="text/javascript" src="js.js"></script>
+
+		<div>&nbsp;</div>
+
+		<form>
+            <fieldset>
+                <legend>Text Value</legend>
+                Nama: <input type="text" name="nama" value="" />
+            </fieldset>
+
+            <div>&nbsp;</div>
+
+            <fieldset>
+                <legend>Radio Value</legend>
+                <em>Department</em><br />
+                Field: <input type="radio" name="department" value="Field" checked="checked" /><br />
+                IT Operations: <input type="radio" name="department" value="IT Operations" /><br />
+                Sales: <input type="radio" name="department" value="Sales" /><br />
+                Management: <input type="radio" name="department" value="Management" />
+            </fieldset>
+
+            <div>&nbsp;</div>
+
+            <fieldset>
+            	<legend>Save To Cookie</legend>
+	            <button type="button" onclick="saveTextValue()">Save Text</button>
+	            <button type="button" onclick="saveRadioValue()">Save Radio</button>
+	        </fieldset>
+        </form>
+
+	</body>
+</html>
+<script type="text/javascript">
+	function clickHandler() {
+		alert('You clicked me!');
+	}
+
+	function startLogic() {
+	    var lorem = '<em><h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4></em>';
+	    /*innerHTML digunakan jika ingin melakukan modifikasi pada content html*/
+	    document.getElementById('headerItem').innerHTML = lorem;
+	}
+</script>

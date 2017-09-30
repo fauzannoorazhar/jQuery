@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>HTML Page</title>
+    </head>
+	<script type="text/javascript" src="js.js"></script>
+    <body>
+
+	<section>
+		<button onclick="handleClick(doSomethingElse)">Klik Disini</button>
+	</section>
+
+	<div>&nbsp;</div>
+
+	<p id="dateTarget"></p>
+	<!-- innerHTML digunakan jika ingin melakukan modifikasi pada content Html -->
+	<button onclick='getElementById("dateTarget").innerHTML = Date()'>Get Current Time</button>
+
+	<p id="dateTarget2"></p>
+	<!-- innerHTML digunakan jika ingin melakukan modifikasi pada content Html -->
+	<button onclick='clickHandle()'>Get Current Time 2</button>
+
+	</body>
+</html>
+
+<div>&nbsp;</div>
+
+<table style="border: 1px solid white; border-collapse: collapse">
+	<thead>
+		<tr>
+			<th style="border: 1px dashed black; padding: 3px">Event</th>
+			<th style="border: 1px dashed black; padding: 3px">Details</th>
+		</tr>
+	</thead>
+		<tr>
+			<td style="border: 1px dashed black; padding: 3px">onload</td>
+			<td style="border: 1px dashed black; padding: 3px">The browser has finished loading the page</td>
+		</tr>
+		<tr>
+			<td style="border: 1px dashed black; padding: 3px">onmouseover</td>
+			<td style="border: 1px dashed black; padding: 3px">The user moves the mouse over an HTML element</td>
+		</tr>
+		<tr>
+			<td style="border: 1px dashed black; padding: 3px">onmouseout</td>
+			<td style="border: 1px dashed black; padding: 3px">The user moves the mouse away from an HTML element</td>
+		</tr>
+		<tr>
+			<td style="border: 1px dashed black; padding: 3px">onclick</td>
+			<td style="border: 1px dashed black; padding: 3px">The user clicks an HTML element</td>
+		</tr>
+		<tr>
+			<td style="border: 1px dashed black; padding: 3px">onkeydown</td>
+			<td style="border: 1px dashed black; padding: 3px">The user pushes a keyboard key</td>
+		</tr>
+</table>

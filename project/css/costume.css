@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.img-bg {
+ /* The image used */
+    background-image: url("../img/body4.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.spoiler {
+	background: rgba(0, 0, 0, 0.33);
+	text-align: center;
+	margin: 0% 10% 5% 10%;
+	border: 2px dotted white;
+	border-radius: 8px;
+	padding: 5% 2% 5% 2%;
+}
+
+span {
+	color: white;
+}
+
+.button {
+	text-align: center;
+}

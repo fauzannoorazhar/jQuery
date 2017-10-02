@@ -24,4 +24,24 @@ body, html {
 	top: 0;
 	left: 0;
 	display: none;
+	text-align: center;
+}
+
+#overlay img {
+	margin-top: 5%
+}
+
+#overlay p {
+	color: white;
+	padding-top: 1%;
+}
+
+#overlay i {
+	color: white;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+#overlay.close i {
+
 }

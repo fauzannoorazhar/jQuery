@@ -1,23 +1,13 @@
 //Problem: User when clicking on images goes to dead end
 //Solution: Create an overlay with the large images - Lightbox
-var $overlay = $('<div id="overlay"></div>')
+var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
 var $caption = $("<p></p>");
-var $close = $('<i class="close fa fa-close fa-2x"></i>');
+var $close = $("#icon-close").hide();
 
-$(".next").hide();
-$(".prev").hide();
-/*var $iconLeft = $('<i class="fa fa-arrow-circle-o-left fa-4x" aria-hidden="true"></i>');
-var $iconRight = $('<i class="fa fa-arrow-circle-o-right fa-4x" aria-hidden="true"></i>');*/
-
-$overlay.append($close)
-
-//Icon left images
-$overlay.append($(".next").show());
+$overlay.append($close.show());
 //An images
 $overlay.append($image);
-//Icon right images
-$overlay.append($(".prev").show());
 //A caption bottom images
 $overlay.append($caption);
 
@@ -38,17 +28,6 @@ $("#imagesGallery a").click(function (event) {
 	$overlay.fadeIn(500);
 
 	//Get child alt attribute and set caption
-});
-
-$(".prev").css('cursor','pointer').click(function() {
-	var lokasiImage = $(this).attr("href");
-	$image.attr("src", lokasiImage);
-	$image.next(lokasiImage);
-	alert('lorem');
-});
-
-$(".next").css('cursor','pointer').click(function() {
-	
 });
 
 //When overlay is clicked

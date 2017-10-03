@@ -28,7 +28,7 @@ body, html {
 }
 
 #overlay img {
-	margin-top: 5%
+	margin-top: 3%
 }
 
 #overlay p {
@@ -36,12 +36,15 @@ body, html {
 	padding-top: 1%;
 }
 
-#overlay i {
+/*#overlay i {
 	color: white;
 	padding-left: 3%;
 	padding-right: 3%;
-}
+}*/
 
-#overlay.close i {
-
+#icon-close {
+	text-align: right;
+	padding-right: 1%;
+	padding-top: 1%;
+	color: white;
 }

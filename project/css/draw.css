@@ -1,0 +1,103 @@
+/*body { 
+    background-color: #132133;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+*/
+
+.background {
+	background-color: #132133;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.text-h3 {
+	padding-top: 2%;
+	color: #fff;
+}
+
+canvas {
+	background: #fff;
+	border-radius: 5px; 
+	border: 2px black;
+	margin: 1% 0 2% 0;
+	cursor: url('../img/pen.png'),auto;
+}
+
+ul li, #newColor {
+	display: block;
+	height: 54px;
+	width: 54px;
+	border-radius: 60px;
+	cursor: pointer;
+	border: 0;
+	box-shadow: 0 3px 0 0 #222;
+}
+
+ul li {
+	display: inline-block;
+	margin: 0 5px 10px;
+} 
+
+.red {
+	background: #fc4c4f;
+}
+
+.blue {
+	background: #4fa3fc;
+}
+
+.yellow {
+	background: #ecd13f;
+}
+
+.selected {
+    border: 7px solid #fff;
+    width: 54px;
+    height: 54px;
+}
+
+#revealColorSelect {
+	border: none;
+	margin: 0 0 2% 3%;
+	border-radius: 5px;
+	padding: 5px 20px;
+	width: 140px;
+}
+
+button {
+	background: #68b25b;
+	box-shadow: 0 3px 0 0 #6a845f;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	text-shadow: 0 1px #6a845f;
+	font-size: 16px;
+	line-height: 40px;
+}
+
+#addNewColor {
+	background-color: #68b25b;
+}
+
+#colorSelect {
+	background: #fff;
+    border-radius: 5px;
+    clear: both;
+    margin: 0% 39% 0;
+    padding: 10px;
+    width: 335px;
+    position: relative;
+	display: none;
+}
+
+#newColor {
+	width: 80px;
+	height: 80px;
+	border-radius: 3px;
+	box-shadow: none;
+	float: left;
+	border: none;
+	margin: 10px 20px 20px 10px;
+}
